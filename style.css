@@ -1,22 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif; 
+  font-family: "Poppins", sans-serif;
 }
-
-/* NAVIGATION MENU */
+/***** Navigation Menu ******/
 
 #top_nav {
   background-color: #4c7ea5;
-  padding: 0.6% 10%;
+  padding: 0.2% 8%;
 }
 .navbar-dark .navbar-nav .nav-link {
   color: white;
   font-size: 20px;
   padding-left: 20px;
-
 }
 .navbar-dark .navbar-brand {
   color: #fff;
@@ -24,8 +22,6 @@
   padding-right: 5%;
   font-weight: bolder;
 }
-
-/* HOME PAGE */
 .content {
   background-image: linear-gradient(rgba(13, 35, 126, 0.6), rgba(4, 9, 30, 0.6)),
     url("images/img1.jpeg");
@@ -52,20 +48,11 @@
   align-items: center;
   padding: 10px;
 }
-/* .line{
-  text-align: center;
-  position: absolute;
-   width: 25%;
-   top: 42%;
-   right: 35%;
-   height: 3px;
-   background-color: rgb(208, 216, 50);
-
-} */
-
-/* MEDIA QUERIES FOR NAVIGATION MENU AND HOME PAGE*/
 
 @media (max-width: 992px) {
+  #top_nav {
+    padding: 10px 20px;
+  }
   .navbar-nav {
     float: right;
     display: flex;
@@ -90,27 +77,11 @@
     height: 70%;
   }
 }
-@media (max-width: 830px) {
-  .navbar-nav {
-    float: right;
-  }
-  .container-fluid {
-    min-height: 75vh;
-  }
-  .container-fluid .banner h1 {
-    font-size: 60px;
-    text-align: center;
-    position: absolute;
-    width: 90%;
-    height: 55%;
-  }
-}
-@media (max-width: 768px) {
+ @media (max-width: 768px) {
   .navbar-dark .navbar-brand {
-    font-size: 35px;
-    /* padding-right: 2%; */
+    font-size: 30px;
   }
-  .container-fluid {
+.container-fluid {
     min-height: 60vh;
   }
   .container-fluid .banner h1 {
@@ -120,32 +91,36 @@
     width: 90%;
     height: 50%;
   }
-}
+} 
 
 @media (max-width: 576px) {
   .navbar-dark .navbar-brand {
     font-size: 20px;
-    /* padding: 5% 0%; */
+  }
+  .navbar-dark .navbar-nav{
+    padding:10px;
   }
   .navbar-dark .navbar-nav .nav-link {
-    font-size: 20px;
+    font-size: 16px;
     text-align: right;
+  }
+  .nav-link .icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px;
+      margin: 0px;
   }
   .container-fluid {
     min-height: 50vh;
   }
   .container-fluid .banner h1 {
     font-size: 36px;
-    text-align: center;
-    position: absolute;
-    width: 90%;
-    height: 50%;
   }
 }
+
+
 @media (max-width: 500px) {
-  #top_nav {
-    padding:5%;
-  }
   .container-fluid {
     min-height: 40vh;
   }
@@ -155,44 +130,57 @@
     position: absolute;
     width: 90%;
     height: 40%;
-
   }
 }
 
-/* WELCOME SECTION */
+/******** Welcome Section **********/
 
-section .sec_aboutus{
+section .sec_aboutus {
   width: 100%;
   height: 80vh;
 }
-.sec_aboutus h1{
+.sec_aboutus h1 {
   margin-top: 30px;
   text-align: center;
-  text-decoration: 3px solid yellow underline;
+  text-decoration: 3px solid yellowgreen underline;
 }
-
 #servicetext {
   padding: 5% 5%;
   text-align: justify;
+  line-height: 35px;
 }
 #serviceimg {
   padding: 5%;
 }
+@media only screen and (max-width: 992px) {
+  #servicetext {
+    padding: 0px;
+    margin: 20px;
+  }
+}
 @media only screen and (max-width: 768px) {
+  #servicetext {
+    padding: 50px;
+    margin: 0px;
+    line-height: 35px;
+  }
   #serviceimg {
-    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #servicetext {
+    padding: 30px;
+    line-height: 25px;
   }
 }
 
-/* OUR FACILITIES SECTION */
 
-.facilities-heading h1{
+/****** Facilities Section *****/
+
+.facilities-heading h1 {
   text-align: center;
-  text-decoration: 3px solid yellow underline;
-}
-.Facilities{
-  /* background-color: #4c7ea5; */
-
+  text-decoration: 4px solid yellowgreen underline;
 }
 #facilitiestext {
   padding-top: 5%;
@@ -200,7 +188,7 @@ section .sec_aboutus{
   margin-left: 9%;
 }
 #facilitiesbtn {
-  margin: 20px ;
+  margin: 20px;
   background-color: #2355c9;
   color: white;
   border: 2px solid #fcc302;
@@ -208,53 +196,113 @@ section .sec_aboutus{
 #facilitiesimg {
   padding-top: 5%;
 }
-.icon{
+.icon {
   margin: 10px;
-
 }
-
-/* MEDIA QUERIES FOR OUR FACILITIES */
-
 @media only screen and (max-width: 768px) {
   #facilitiesimg {
     padding-top: 10%;
   }
 }
 
-/* STATISTICS SECTION */
+/****** Statistics Section *****/
 
-.statistics{
-  width:100%;
+ .statistics {
+  width: 100%;
   height: 50vh;
-  /* background-color: #fcc302; */
 }
-.stat_title{
+.stat_title {
   text-align: center;
   margin: 20px;
   text-decoration: 4px solid lawngreen underline;
 }
-.stat_heading{
+.stat_heading {
   margin-left: 15%;
 }
-.stat_heading .num h1{
+.stat_heading .num h1 {
   font-size: 50px;
-  font-weight:600;
+  font-weight: 600;
   margin-top: 90px;
   color: rgb(86, 86, 161);
-
 }
-.stat_heading .num p{
+.stat_heading .num p {
   font-size: 18px;
   font-weight: 500;
-
 }
-.divider{position: absolute;
-    background: #ff9900;
-    top: 50%;
-    right: 25%;
-    width: 3px;
-    height: 75px;
-    transform: rotate(20deg);
+.divider {
+  position: absolute;
+  background: #ff9900;
+  top: 50%;
+  right: 25%;
+  width: 3px;
+  height: 85px;
+  transform: rotate(20deg);
+}
+@media only screen and (max-width: 768px) {
+  .stat_heading {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .stat_heading .num h1 {
+    margin: 20px;
+  }
+  .divider {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .statistics {
+    height: 70vh;
+  }
 }
 
-/* MEDIA QUERIES FOR OUR FACILITIS SECTION */
+@media only screen and (max-width: 576px) {
+  .statistics {
+    height: 70vh;
+  }
+  .stat_title {
+    font-size: 30px;
+  }
+  .stat_heading .num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .stat_heading .num h1 {
+    font-size: 30px;
+  }
+} 
+
+
+
+
+
+
+.footer {
+  background-color: black;
+  color:white;
+  padding: 60px 10px;
+  text-align: justify;
+}
+
+.footer_sec .ico {
+  font-size: 20px;
+  padding: 5px;
+}
+.footer_sec .icon {
+  font-size: 20px;
+  border: 1px solid white;
+  padding: 5px;
+}
+hr{
+  margin: 0 100px;
+  background-color: white;
+}
+.end_footer{
+  margin: 20px;
+  text-align: center;
+}
+.company{
+  color:orange;
+  font-weight: bold;
+}
