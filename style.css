@@ -272,11 +272,7 @@ section .sec_aboutus {
     font-size: 30px;
   }
 } 
-
-
-
-
-
+/* ******Footer Section******* */
 
 .footer {
   background-color: black;
@@ -305,4 +301,9 @@ hr{
 .company{
   color:orange;
   font-weight: bold;
+}
+@media only screen and (max-width: 576px) {
+  .footer_sec{
+    margin:20px
+  }
 }

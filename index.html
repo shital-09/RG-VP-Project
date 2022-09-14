@@ -27,7 +27,15 @@
       src="https://kit.fontawesome.com/746e26cc06.js"
       crossorigin="anonymous"
     ></script>
-    <title>Hello, world!</title>
+
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"
+    ></script>
+    <title>UNITY ENTERPRISES | HOME</title>
+    <link rel="icon" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark" id="top_nav">
@@ -104,7 +112,7 @@
       </div>
     </section>
 
-     <section class="container-fluid sec_facilities">
+    <section class="container-fluid sec_facilities">
       <div class="facilities-heading">
         <h1>Our Facilities</h1>
       </div>
@@ -134,35 +142,35 @@
       </div>
     </section>
 
-     <section class="container-fluid statistics">
+    <section class="container-fluid statistics">
       <h1 class="stat_title">IMPORTANT STATISTICS ABOUT US</h1>
       <div class="row stat_heading">
         <div class="col-md-3 col-sm-6 col-xs-12 num">
-          <h1>85</h1>
+          <h1 class="counter">85</h1>
           <p>AGENTS</p>
           <span class="divider"></span>
         </div>
 
         <div class="col-md-3 col-sm-6 col-xs-12 num">
-          <h1>95</h1>
+          <h1 class="counter">95</h1>
           <p>CLIENTS</p>
           <span class="divider"></span>
         </div>
 
         <div class="col-md-3 col-sm-6 col-xs-12 num">
-          <h1>80</h1>
+          <h1 class="counter">80</h1>
           <p>TRANSPORT</p>
           <span class="divider"></span>
         </div>
 
         <div class="col-md-3 col-sm-6 col-xs-12 num">
-          <h1>90</h1>
+          <h1 class="counter" >90</h1>
           <p>SERVICES</p>
         </div>
       </div>
-    </section> 
+    </section>
 
-     <section class="footer">
+    <section class="footer">
       <div class="container">
         <div class="row">
           <div class="footer_sec col-lg-4 clg-md-3 col-sm-12">
@@ -201,11 +209,24 @@
           </div>
         </div>
       </div>
-      <hr>
-      <p class="end_footer">© 2017 Unity Enterprises. All rights reserved | Design by <span class="company">RG - VP Web Solutions</span></p>
-    </section> 
-    
+      <hr />
+      <p class="end_footer">
+        © 2017 Unity Enterprises. All rights reserved | Design by
+        <span class="company">RG - VP Web Solutions</span>
+      </p>
+    </section>
 
+
+    <script src="jquery.counterup.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        $(".counter").counterUp({
+          delay: 10,
+          time: 2500,
+        });
+      });
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -216,6 +237,5 @@
       integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
       crossorigin="anonymous"
     ></script>
-     
   </body>
 </html>
